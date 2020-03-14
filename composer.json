@@ -1,0 +1,16 @@
+{
+    "name": "tanhaeirad/php-mvc-sample",
+    "authors": [
+        {
+            "name": "tanhaeirad",
+            "email": "amirrezatanhaei@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/",
+            "Core\\" : "core/"
+        }
+    }
+}
