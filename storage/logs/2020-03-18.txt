@@ -1,0 +1,81 @@
+
+Fatal error
+Uncaught exception: 'Illuminate\Database\QueryException'
+Message : 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) (SQL: select * from `users` where `users`.`id` = 1 limit 1)'
+Stack trace: #0 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2130): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2118): Illuminate\Database\Query\Builder->runSelect()
+#4 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2604): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2119): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#6 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(521): Illuminate\Database\Query\Builder->get(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(505): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Concerns/BuildsQueries.php(77): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(329): Illuminate\Database\Eloquent\Builder->first(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/support/Traits/ForwardsCalls.php(23): Illuminate\Database\Eloquent\Builder->find(1)
+#11 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Model.php(1618): Illuminate\Database\Eloquent\Model->forwardCallTo(Object(Illuminate\Database\Eloquent\Builder), 'find', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Model.php(1630): Illuminate\Database\Eloquent\Model->__call('find', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/app/Controllers/HomeController.php(13): Illuminate\Database\Eloquent\Model::__callStatic('find', Array)
+#14 [internal function]: App\Controllers\HomeController->index()
+#15 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/Router.php(72): call_user_func_array(Array, Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/public/index.php(11): Core\Router::executeUrl('')
+#17 {main}
+Thrown in '/Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php' on line 664
+**********************************************
+
+
+
+
+
+Fatal error
+Uncaught exception: 'Illuminate\Database\QueryException'
+Message : 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) (SQL: select * from `users` where `users`.`id` = 1 limit 1)'
+Stack trace: #0 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2130): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#3 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2118): Illuminate\Database\Query\Builder->runSelect()
+#4 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2604): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#5 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Query/Builder.php(2119): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#6 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(521): Illuminate\Database\Query\Builder->get(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(505): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Concerns/BuildsQueries.php(77): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Builder.php(329): Illuminate\Database\Eloquent\Builder->first(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/support/Traits/ForwardsCalls.php(23): Illuminate\Database\Eloquent\Builder->find(1)
+#11 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Model.php(1618): Illuminate\Database\Eloquent\Model->forwardCallTo(Object(Illuminate\Database\Eloquent\Builder), 'find', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Eloquent/Model.php(1630): Illuminate\Database\Eloquent\Model->__call('find', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/app/Controllers/HomeController.php(13): Illuminate\Database\Eloquent\Model::__callStatic('find', Array)
+#14 [internal function]: App\Controllers\HomeController->index()
+#15 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/Router.php(72): call_user_func_array(Array, Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/public/index.php(11): Core\Router::executeUrl('')
+#17 {main}
+Thrown in '/Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/vendor/illuminate/database/Connection.php' on line 664
+**********************************************
+
+
+
+
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'file /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/../App/Views/index.php is not exist'
+Stack trace: #0 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/app/Controllers/HomeController.php(13): Core\Views::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/Router.php(72): call_user_func_array(Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/public/index.php(11): Core\Router::executeUrl('')
+#4 {main}
+Thrown in '/Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/Views.php' on line 24
+**********************************************
+
+
+
+
+Fatal error
+Uncaught exception: 'Exception'
+Message : 'Class App\Controllers\HomeContsroller is not exist.'
+Stack trace: #0 /Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/public/index.php(11): Core\Router::executeUrl('')
+#1 {main}
+Thrown in '/Applications/XAMPP/xamppfiles/htdocs/applications/php-mvc-sample/core/Router.php' on line 80
+**********************************************
+
+
+
+
