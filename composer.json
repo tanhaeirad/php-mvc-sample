@@ -6,7 +6,9 @@
             "email": "amirrezatanhaei@yahoo.com"
         }
     ],
-    "require": {},
+    "require": {
+        "philo/laravel-blade": "^3.1"
+    },
     "autoload": {
         "psr-4": {
             "App\\" : "app/",

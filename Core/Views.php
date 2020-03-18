@@ -4,6 +4,8 @@
 namespace Core;
 
 
+use Philo\Blade\Blade;
+
 abstract class Views
 {
     //function to render a view to show
@@ -21,5 +23,18 @@ abstract class Views
             //show error view is not exist
             die("file {$view_address} is not exist"); //TODO: manage error handling
         }
+    }
+
+    public static function renderWithBlade(string $view, array $args = [])
+    {
+        //init address of View and cache folder
+        $views_address = realpath(__DIR__ . '/../App/Views');
+        $cache_address = realpath(__DIR__ . '/../storage/views');
+
+        //create blade
+        $blade = new Blade($views_address, $cache_address);
+
+        return $blade->view()->make($view, $args)->render();
+
     }
 }
