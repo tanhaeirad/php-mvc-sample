@@ -4,11 +4,12 @@
 namespace App\Controllers;
 
 
+use App\Models\User;
 use Core\Views;
 
 class HomeController
 {
     public function index(){
-        return Views::renderWithBlade('index');
+        Views::renderWithBlade("index");
     }
 }

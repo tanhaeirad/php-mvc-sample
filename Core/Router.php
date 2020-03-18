@@ -55,8 +55,8 @@ class Router
         $method = $action[1];
 
         //check router is register or not
-        if ($controller == "") die("This Route: {$url} is not set"); //TODO: Should show 404 page
-        if ($method == "") die("This Route: {$url} is not set"); //TODO: Should show 404 page
+        if ($controller == "") throw new \Exception("no route matched.", 404);
+        if ($method == "") throw new \Exception("no route matched.", 404);
 
         //prepare params
         $params = self::getUrlParams($url);
@@ -73,11 +73,11 @@ class Router
 
             }//method is not exist
             else {
-                die("Method {$method} is not exist"); //TODO: Should show 404 page
+                throw new \Exception("Method {$method} is not exist");
             }
         } //class is not exist:
         else {
-            die("Class {$controller} is not exist."); //TODO: Should show 404 page
+            throw new \Exception("Class {$controller} is not exist.");
         }
 
     }
@@ -166,7 +166,7 @@ class Router
     private static function getUrlAction(string $url)
     {
         //if we have no routes
-        if (empty(self::$routes)) return ["",""];
+        if (empty(self::$routes)) return ["", ""];
 
         foreach (self::$routes as $route) {
             $pattern = "/^" . $route->getRoute() . "$/";

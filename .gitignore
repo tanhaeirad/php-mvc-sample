@@ -97,5 +97,5 @@ vendor/*
 
 #address of blade cache
 storage/views/*
-
+storage/logs/*
 .DS_Store

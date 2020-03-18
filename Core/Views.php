@@ -21,7 +21,7 @@ abstract class Views
             require_once $view_address;
         } else {
             //show error view is not exist
-            die("file {$view_address} is not exist"); //TODO: manage error handling
+            throw new \Exception("file {$view_address} is not exist");
         }
     }
 
