@@ -9,6 +9,6 @@ use Core\Views;
 class HomeController
 {
     public function index(){
-        Views::render('index');
+        return Views::renderWithBlade('index');
     }
 }
