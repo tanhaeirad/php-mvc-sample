@@ -1,4 +1,7 @@
 <?php
+
+namespace Extra;
+
 use Core\Router;
 
 
@@ -14,8 +17,8 @@ $router = Router::getInstance();
 //$routers = array_reverse($routers);
 
 //add each route to routers
-foreach ($routers as $route=>$action)
-    $router->add($route,$action);
+foreach ($routers as $route => $action)
+    $router->add($route, $action);
 
 //return value of $router from Router class
 return $router;
