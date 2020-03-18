@@ -4,7 +4,7 @@ use Core\Router;
 
 //add routes here like [route => action]
 $routers = [
-//    "/series/{slug}/episode/{id}" => "SeriesController@episode",
+    "/" => "HomeController@index",
 ];
 
 //create new Router
