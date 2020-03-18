@@ -1,20 +1,24 @@
 {
-    "name": "tanhaeirad/php-mvc-sample",
-    "authors": [
-        {
-            "name": "tanhaeirad",
-            "email": "amirrezatanhaei@yahoo.com"
-        }
-    ],
-    "require": {
-        "philo/laravel-blade": "^3.1",
-        "vlucas/phpdotenv": "^4.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\" : "app/",
-            "Core\\" : "core/",
-            "Extra\\" : "extra/"
-        }
+  "name": "tanhaeirad/php-mvc-sample",
+  "authors": [
+    {
+      "name": "tanhaeirad",
+      "email": "amirrezatanhaei@yahoo.com"
     }
+  ],
+  "require": {
+    "philo/laravel-blade": "^3.1",
+    "vlucas/phpdotenv": "^4.1",
+    "illuminate/database": "^5.2"
+  },
+  "autoload": {
+    "files": [
+      "Core/Helper.php"
+    ],
+    "psr-4": {
+      "App\\": "app/",
+      "Core\\": "core/",
+      "Extra\\": "extra/"
+    }
+  }
 }
