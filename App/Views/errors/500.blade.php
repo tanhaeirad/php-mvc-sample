@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('content')
-    <h1>Index Page</h1>
+    <h1>Server Error 500</h1>
 @endsection
