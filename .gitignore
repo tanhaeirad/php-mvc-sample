@@ -94,4 +94,8 @@ fabric.properties
 .idea/*
 composer.lock
 vendor/*
+
+#address of blade cache
+storage/views/*
+
 .DS_Store
